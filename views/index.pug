@@ -1,0 +1,10 @@
+extends layout/header.pug
+
+block content
+    h1 This is the Index PUG
+    a(href="/user/admin") Admin
+    p #{status}
+    each product in prods
+        h3 #{product.name}
+        p #{product.price}
+    a(href="/user/logout") Logout 
